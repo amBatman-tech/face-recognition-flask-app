@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Facial Recognition Service - Enter Family Details</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
+</head>
+<body style="background-image: url('static/image/AB.png'); background-repeat: no-repeat; ">
+
+            <div class = "container">
+                <h1>Facial Recognition</h1>
+                    <div class="form-v10-content" id="data-content" style="margin-left: 188px;margin-top: 80px; height: 500px">
+                            <h2 style="margin-left: 120px">Enter Family Details</h2>
+                            <form method="POST" id="data" action="/details_code" style="position: absolute;">
+                                <div class="form-item">
+                                    <input id="fname-field" name="userid" readonly="readonly" value="{{ u }}" type="text" placeholder="User ID"/>
+                                </div>
+                                <div class="form-item">
+                                    <input id="fname-field" name="fathername" value="" type="text" placeholder="Father's Name"/>
+                                </div>
+                                <div class="form-item">
+                                    <input id="mname-field" name="mothername" value="" type="text" placeholder="Mother's name"/>
+                                </div>
+                                <div class="form-item">
+                                    <input id="age-field" name="age" value="" type="text" placeholder="Age"/>
+                                </div>
+                                <div class="form-item">
+                                    <input id="address-field" name="address" value="" type="text" placeholder="Address"/>
+                                </div>
+                                <div class="form-item">
+                                    <input id="city-field" name="city" value="" type="text" placeholder="City"/>
+                                </div>
+                                <div class="form-item">
+                                    <input id="state-field" name="state" value="" type="text" placeholder="State"/>
+                                </div>
+                                <div class="form-item">
+                                    <input id="country-field" name="country" value="" type="text" placeholder="Country"/>
+                                </div>
+                                <div class="form-item">
+                                    <input id="zip-field" name="zipcode" value="" type="text" placeholder="Zip Code"/>
+                                </div>
+                                <div class="form-item">
+                                    <input id="phone-field" name="phonenumber" value="" type="text" placeholder="Phone Number"/>
+                                </div>
+                                <div class="form-action" style="margin-left: 125px;">
+                                    <button type="submit" style="background-color: #2271dd">Submit Details</button>
+                                </div>
+                            </form>
+                        </div>
+            </div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    background-color: #79aaff;
+}
+.message .success{
+    padding: 10px;
+    border: 1px solid #00e640;
+    color: #00e640;
+}
+.message .error{
+    padding: 10px;
+    border: 1px solid #CF000F;
+}
+.container{
+    max-width: 960px;
+    margin: 0 auto;
+}
+form .description{
+    font-size: 12px;
+}
+.form-item{
+    margin-bottom: 15px;
+
+}
+
+.form-item input[type="text"]{
+    padding: 5px 10px;
+    border: none transparent;
+    outline: none;
+
+}
+.form-action button{
+     border: 1px solid rgba(0, 0, 0, 0.5);
+     padding: 8px 15px;
+     background: #FFF;
+}
+.tabs{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin: 20px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+.tabs li{
+    display: inline-block;
+    line-height: 20px;
+    font-size: 15px;
+    padding: 5px 15px;
+    font-weight: 700;
+    cursor: pointer;
+
+}
+.tabs li.active{
+    color: #00e640;
+    background-color: #0b0b0b;
+}
+#recognize-content, #train-content{
+    display: none;
+}
+.form-v10-content  {
+	background: #fff;
+	width: 450px;
+	border-radius: 10px;
+	-o-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+	-o-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+	-ms-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+	-webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+	margin: 95px 0;
+	position: absolute;
+    left: 200px;
+    top: 100px;
+	font-family: 'Montserrat', sans-serif;
+}

@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+    <title>Facial Recognition Service</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
+    <script type="text/javascript" src="{{ url_for('static', filename='lodash.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='immutable.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='axios.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='jquery.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+</head>
+<body style="background-image: url('static/image/AB.png');">
+
+
+<div class="container">
+    <h1>Facial Recognition</h1>
+
+    <ul class="tabs">
+        <li data-section="train-content">Train</li>
+        <li data-section="recognize-content">Recognize</li>
+    </ul>
+    <div class="form-v10-content" id="train-content" style="margin-left: 180px; margin-top: 150px">
+        <h2 style="margin-left: 150px">Train</h2>
+        <form method="post" id="train">
+            <div class="message">
+
+            </div>
+            <p class="description">Pre-training our service. Upload an image contain the face and give it full name for
+                recognize later</p>
+            <div class="form-item">
+                <label for="input-file">Face image</label>
+                <input type="file" name="file" id="input-file" accept="image/*"/>
+            </div>
+            <div class="form-item">
+                <input id="name-field" name="name" value="" type="text" placeholder="Full name"/>
+            </div>
+            <!--<div class="form-item">
+                <input id="name-field" name="fathername" value="" type="text" placeholder="Father's Name"/>
+            </div>
+            <div class="form-item">
+                <input id="name-field" name="mothername" value="" type="text" placeholder="Mother's name"/>
+            </div>
+            <div class="form-item">
+                <input id="name-field" name="age" value="" type="text" placeholder="Age"/>
+            </div>
+            <div class="form-item">
+                <input id="name-field" name="address" value="" type="text" placeholder="Address"/>
+            </div>
+            <div class="form-item">
+                <input id="name-field" name="city" value="" type="text" placeholder="City"/>
+            </div>
+            <div class="form-item">
+                <input id="name-field" name="state" value="" type="text" placeholder="State"/>
+            </div>
+            <div class="form-item">
+                <input id="name-field" name="country" value="" type="text" placeholder="Country"/>
+            </div>
+            <div class="form-item">
+                <input id="name-field" name="zipcode" value="" type="text" placeholder="Zip Code"/>
+            </div>
+            <div class="form-item">
+                <input id="name-field" name="phonenumber" value="" type="text" placeholder="Phone Number"/>
+            </div>-->
+
+            <div class="form-action" style="margin-left: 20px; float: left">
+                <button type="submit" style="background-color: #2271dd; color: #0b0b0b"><a href="/details" style="text-decoration: none;">Enter Details Here</a></button>
+            </div>
+            <div class="form-action" style="margin-left: 150px; float: left">
+                <button type="submit" style="background-color: #2271dd">Begin train it</button>
+            </div>
+            <div class="login100-more" style="background-image: url('static/image/AB.png');">
+
+            </div>
+        </form>
+    </div>
+
+    <div id="recognize-content" class="form-v10-content"style="margin-left: 180px; margin-top: 150px">
+        <h2 style="margin-left: 150px">Recognize</h2>
+
+        <form method="post" id="recognize">
+            <div class="message">
+
+            </div>
+            <p class="description">Upload an image and i will tell to you who is is the picture.</p>
+            <div class="form-item">
+                <label for="input-file">Image</label>
+                <input type="file" name="file" id="recognize-input-file" accept="image/*"/>
+            </div>
+
+            <div class="form-action" style="margin-left: 150px">
+                <button type="submit" style="background-color: #2271dd">Recognize it</button>
+            </div>
+        </form>
+    </div>
+
+</div>
+</body>
+</html>
